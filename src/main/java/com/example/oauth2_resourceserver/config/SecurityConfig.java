@@ -19,12 +19,11 @@ public class SecurityConfig {
                         .jwtAuthenticationConverter(new CustomJwtAuthenticationTokenConverter())
         );
 
-        http.csrf().disable();
-
         http.authorizeHttpRequests()
                 .requestMatchers("/tea/search/**").hasAuthority("read")
                 .requestMatchers("/delete/**").hasAuthority("delete")
                 .requestMatchers("/saveTea").hasAuthority("write")
+                .requestMatchers("/test").hasAuthority("testAuthority")
                 .anyRequest().denyAll();
 
         return http.build();
