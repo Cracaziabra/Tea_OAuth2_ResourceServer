@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.rest.core.annotation.RestResource;
 
-@Data
+@Getter
+@Setter
+@ToString
 @Entity
 @Table(name = "tea")
 @RequiredArgsConstructor
