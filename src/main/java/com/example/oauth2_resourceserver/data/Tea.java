@@ -7,6 +7,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 @Getter
 @Setter
 @ToString
+@EqualsAndHashCode
 @Entity
 @Table(name = "tea")
 @RequiredArgsConstructor
@@ -16,9 +17,11 @@ public class Tea {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @EqualsAndHashCode.Exclude
     private Long id;
 
     private final String name;
     private final String color;
     private final String origin;
+
 }
