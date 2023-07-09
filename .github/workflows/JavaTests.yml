@@ -10,9 +10,9 @@ name: Java CI tests
 
 on:
   push:
-    branches: [ "coverWithTests" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "coverWithTests" ]
+    branches: [ "main" ]
 
 jobs:
   build:
