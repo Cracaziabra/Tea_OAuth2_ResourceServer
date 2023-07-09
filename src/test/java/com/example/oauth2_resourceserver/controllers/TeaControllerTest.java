@@ -11,6 +11,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
@@ -32,6 +33,9 @@ class TeaControllerTest {
 
     @MockBean
     TeaRepository teaRepository;
+
+    @MockBean
+    JwtDecoder jwtDecoder;
 
     @Test
     void shouldReturn401WithoutAuthorization() throws Exception {
