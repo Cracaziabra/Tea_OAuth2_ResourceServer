@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>OAuth2_ResourceServer</artifactId>
+    <artifactId>Tea_OAuth2_ResourceServer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>OAuth2_ResourceServer</name>
     <description>OAuth2_ResourceServer</description>
