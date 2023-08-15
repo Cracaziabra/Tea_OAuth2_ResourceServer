@@ -9,4 +9,10 @@
 Валидность токена подтверждается через JWT-эндпоинт у сервера авторизации.
 
 ## Изученные технологии
-Spring (Boot, Security, Data JPA, Data Rest, MVC, Test), OAuth2, PostgreSQL, Lombok, Maven, Git, GitHub (+CI).
+Spring (Boot, Security, Data JPA, Data Rest, MVC, Test)\
+OAuth2\
+PostgreSQL\
+Lombok\
+Maven\
+Git\
+GitHub (+CI)
